@@ -1,4 +1,4 @@
-# 🐧 ProcessWatchdog
+# ProcessWatchdog
 
 **Monitor Critical Linux Processes. Auto-Heal When They Fail.**
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 💡 Why This Project?
+## Why This Project?
 
 This project showcases practical and deep working knowledge of **Linux environments**, covering:
 
@@ -20,7 +20,7 @@ This project showcases practical and deep working knowledge of **Linux environme
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Layer             | Tool / Tech Used             |
 |------------------|------------------------------|
@@ -34,7 +34,7 @@ This project showcases practical and deep working knowledge of **Linux environme
 
 ## ✨ Features
 
-### ✅ Current Features
+### Current Features
 - **Monitor Any Process**: Supply the process name and it checks if it’s running.
 - **Auto-Restart (Linux)**: Uses `systemctl` to restart services if they fail.
 - **Mac-Compatible**: Gracefully skips restart on macOS (or extend via `brew services`).
@@ -42,7 +42,7 @@ This project showcases practical and deep working knowledge of **Linux environme
 - **Cron-Ready**: Install a scheduled check in one command.
 - **Docker-Friendly**: Works great in minimal containers for lightweight service guards.
 
-### 🚧 In Development
+### In Development
 - Email alerts (using `mail` or `sendmail`)
 - Web UI to display live status of monitored services
 - Restart via `launchctl` or `brew services` on macOS
@@ -52,7 +52,7 @@ This project showcases practical and deep working knowledge of **Linux environme
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. Takes a process name as input (`nginx`, `zsh`, etc.)
 2. Uses `pgrep` to check if it's running.
@@ -64,9 +64,9 @@ This project showcases practical and deep working knowledge of **Linux environme
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### 📦 Prerequisites
+### Prerequisites
 - Linux or macOS
 - `cron` installed and running
 - For restarts on Linux: `sudo` and `systemctl`
@@ -85,3 +85,24 @@ chmod +x *.sh
 ./watchdog.sh zsh #On macOS
 
 ```
+### Future Goals
+
+I plan to expand **ProcessWatchdog** with the following features:
+
+- Build a **web-based status dashboard** using Flask and WebSocket so I can visually track the health of monitored processes in real time.
+- Integrate with **Prometheus and Grafana** to expose metrics and build rich dashboards for long-term observability.
+- Add **alerting support via Slack, Email, or Discord** to get notified the moment a critical process goes down.
+- **Containerize the tool with Docker** to make it easier to deploy in ephemeral or cloud environments.
+- Introduce support for **service groups or dependencies**, so I can monitor and manage complex service chains more effectively.
+
+
+## License
+Copyright (c) 2025 Mohammad Shafay Joyo
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+For questions or support:
+
+Email: shafay11august@gmail.com
+GitHub: @joyo11
